@@ -10,7 +10,7 @@ and [*folly::ProducerConsumerQueue*](https://github.com/facebook/folly/blob/mast
 
 ## Example
 
-```cpp
+```cpp 
 SPSCQueue<int> q(1);
 auto t = std::thread([&] {
   while (!q.front());
